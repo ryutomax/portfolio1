@@ -1,0 +1,75 @@
+.p-facebook {
+  padding: 32px 24px;
+  background-color: $colorWhite;
+
+  &__head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 8px;
+    border-bottom: 1px solid $colorGrayLight;
+  }
+
+  &__headLogo {
+    width: 75px;
+    margin-right: 24px;
+    margin-bottom: 24px;
+  }
+
+  &__headLink {
+    color: $colorPurple;
+    font-size: 28px;
+    font-size: 1.75rem;
+    font-weight: bold;
+    @include opaAnime;
+  }
+
+  &__good {
+    display: block;
+    width: 125px;
+    @include opaAnime;
+  }
+
+  &__mid {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid $colorGrayLight;
+  }
+
+  &__midTxt {
+    font-size: 20px;
+    font-size: 1.25rem;
+    margin-bottom: 8px;
+  }
+
+  &__midList {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -10px;
+    margin-bottom: -20px;
+  }
+
+  &__midItem {
+    width: 100px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    @include opaAnime;
+  }
+
+  &__plugin {
+    display: flex;
+    align-items: center;
+    padding-top: 16px;
+    padding-left: 20px;
+    color: $colorGray;
+    font-size: 20px;
+    font-size: 1.25rem;
+    text-transform: capitalize;
+  }
+
+  &__pluginIcon {
+    width: 30px;
+    margin-right: 16px;
+  }
+}
+

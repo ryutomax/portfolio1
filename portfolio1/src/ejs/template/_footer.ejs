@@ -1,0 +1,30 @@
+<!-- 画像相対パス -->
+<% const path = ["../../assets/images/"]%>
+
+<footer class="l-footer">
+    <ul class="c-footerNav">
+
+      <% const link = [
+        {target: 'サイトマップ'},
+        {target: 'リクルートID規約'},
+        {target: '利用規約'},
+        {target: 'よくあるご質問'},
+        {target: 'プライバシーポリシー'}
+      ]; %>
+
+      <% for(var i = 0; i < link.length; i++) {%>
+      <li class="c-footerNav__item">
+        <a href="#" class="c-footerNav__link"><%= link[i].target %></a>
+      </li>
+      <% } %>
+    </ul>
+    <div class="l-footer__bottom">
+      <small class="l-footer__copy"><img src="<%= path %>footer.copyright.png" alt="コピー画像" class="l-footer__img"></small>
+      <a href="#" class="l-footer__link">リクルートグループサイトへ</a>
+    </div>
+    <!-- /.l-footer__bottom -->
+</footer>
+
+</div><!-- l-wrap -->
+</body>
+</html>

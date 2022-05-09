@@ -1,0 +1,47 @@
+.p-topMenu {
+  &__list {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  &__item {
+    border-bottom: 1px solid $colorGray;
+    @include opaAnime;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+  }
+
+  &__arrow {
+    margin-right: 16px;
+    padding: 1px 6px 6px 6px;
+    border-radius: 8px;
+    background-color: $colorGray;
+    color: $colorWhite;
+    font-size: 14px;
+    font-size: 0.75rem;
+  }
+
+  &__txt {
+    font-size: 16px;
+    font-size: 1rem;
+  }
+}
+
+@include mq(o-sp){
+  .p-topMenu__link {
+    width: 300px;
+    margin: 0 auto;
+  }
+}
+
+@include mq(o-pc) {
+  .p-topMenu__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}

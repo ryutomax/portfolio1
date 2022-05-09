@@ -1,0 +1,14 @@
+.c-headerLogin {
+  text-align: end;
+  @include opaAnime;
+  &__img {
+    width: 50px;
+    padding: 6px;
+    border-radius: 8px;
+    background-color: $colorRed;
+  }
+
+  &__txt {
+    color: $colorGray;
+  }
+}

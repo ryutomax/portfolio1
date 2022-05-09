@@ -1,0 +1,48 @@
+.c-footerNav {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 32px 20px;
+  border-bottom: 1px solid $colorGrayLight;
+
+  &__item {
+    @include opaAnime;
+    &:not(:first-child) {
+      &::before {
+        content: "/";
+      }
+    }
+  }
+}
+
+
+@include mq(o-sp){
+  .c-footerNav {
+    justify-content: center;
+
+    &__item {
+      font-size: 20px;
+      font-size: 1.25rem;
+      &:not(:first-child) {
+        &::before {
+          content: "/";
+        }
+      }
+    }
+  }
+}
+
+@include mq(o-pc) {
+  .c-footerNav {
+    &__item {
+      &:not(:last-child) {
+        margin-right: 16px;
+      }
+
+      &:not(:first-child) {
+        &::before {
+          margin-right: 12px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+.p-products {
+  border-bottom: 2px solid $colorGrayLight;
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    width: calc(100% / 3);
+    border: 1px solid $colorGrayLight;
+    @include opaAnime;
+  }
+
+  &__link {
+    display: block;
+    padding: 20px 24px;
+  }
+
+  &__more {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 16px;
+    @include opaAnime;
+  }
+
+  &__txt {
+    font-size: 28px;
+    font-size: 1.75rem;
+    font-size: #{"min(7.5vw, 1.75rem)"};
+  }
+
+  &__arrow {
+    width: 40px;
+  }
+}
+
+@include mq(o-pc) {
+
+  .p-products {
+    &__inner {
+      max-width: 1080px;
+      margin: 0 auto;
+    }
+
+    &__item {
+      width: calc(100% / 4);
+    }
+
+    &__more {
+      border-right: 1px solid $colorGrayLight;
+      border-left: 1px solid $colorGrayLight;
+    }
+  }
+
+}

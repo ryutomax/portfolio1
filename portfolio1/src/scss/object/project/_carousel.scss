@@ -1,0 +1,82 @@
+.p-carousel {
+  &__wrapper {
+    position: relative;
+  }
+
+  &__link {
+    display: block;
+  }
+
+  &__newTag,
+  &__name {
+    position: absolute;
+  }
+
+  &__img {
+    height: 400px;
+    object-fit: cover;
+  }
+
+  &__name {
+    bottom: 40px;
+    left: 20px;
+    color: $colorWhite;
+    font-size: 28px;
+    font-size: 1.75rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 6px black;
+  }
+
+  &__newTag {
+    left: 0;
+    padding: 18px 8px;
+    background-color: $colorRed;
+    color: $colorWhite;
+    font-weight: bold;
+  }
+
+  &__dots {
+    display: flex;
+    justify-content: center;
+    padding: 24px 16px;
+  }
+
+  &__dot {
+    width: 16px;
+    height: 16px;
+    background-color: $colorGrayLight;
+    transition: 0.5s;
+    cursor: pointer;
+    &:not(:last-child) {
+      margin-right: 16px;
+    }
+    &:last-child {
+      background-color: $colorRed;
+    }
+    &:hover {
+      background-color: $colorRed;
+    }
+  }
+}
+
+@include mq(o-sp){
+  .p-carousel__img {
+    height: 500px;
+  }
+}
+
+@include mq(o-pc) {
+
+  .p-carousel {
+    &__wrapper {
+      max-width: 1080px;
+      margin: 0 auto;
+    }
+
+    &__img {
+      height: 600px;
+    }
+  }
+
+}
+

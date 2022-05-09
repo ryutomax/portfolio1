@@ -1,0 +1,126 @@
+<% var title = "TOP"; var description = "トップのdescription"; %>
+
+<!-- 画像相対パス -->
+<% const path = ["../../assets/images/"]%>
+
+<% include src/ejs/template/_head %>
+
+<!-- header読み込み  -->
+<% include src/ejs/template/_header %>
+
+<main class="l-main">
+
+  <!-- p-topMenu  -->
+  <section class="p-topMenu">
+    <div class="p-topMenu__inner">
+
+      <ul class="p-topMenu__list">
+
+        <% const topMenu = [
+          {kinds: "カテゴリから家具"},
+          {kinds: 'コーディネートから家具'},
+          {kinds: 'ブランドから家具'},
+          {kinds: 'こだわりから家具'},
+          {kinds: '家具インテリアショップ'},
+        ]; %>
+
+        <%for (var i = 0; i < 5; i++) { %>
+
+          <li class="p-topMenu__item">
+            <a href="" class="p-topMenu__link">
+              <div class="p-topMenu__arrow">▶︎</div>
+              <p class="p-topMenu__txt"><%= topMenu[i].kinds %>を探す</p>
+            </a>
+          </li>
+
+        <% } %>
+
+      </ul>
+
+    </div>
+    <!-- /.p-topMenu__inner -->
+
+    <div class="c-sectionFooter" style="background-image: url('<%= path %>dodded.png');"></div>
+
+  </section>
+
+  <section class="p-carousel">
+
+    <figure class="p-carousel__wrapper">
+      <a href="#" class="p-carousel__link">
+        <img src="<%= path %>hero.jpg" alt="" class="p-carousel__img">
+        <h3 class="p-carousel__name">インテリア コーディネート<br>IDEE リビング #004</h3>
+        <span class="p-carousel__newTag">new</span>
+      </a>
+    </figure>
+
+    <div class="p-carousel__indicator">
+      <ul class="p-carousel__dots">
+
+        <% for (var i = 0; i < 8; i++) { %>
+
+          <li class="p-carousel__dot"></li>
+
+        <% } %>
+
+      </ul>
+    </div>
+    <!-- /.p-carousel__indicator -->
+
+    <div class="c-sectionFooter" style="background-image: url('<%= path %>dodded.png');"></div>
+
+  </section>
+
+  <section class="p-products">
+    <div class="p-products__inner">
+      <ul class="p-products__list">
+
+        <% const product = [
+          {src:'items_1.jpg', alt: 'ローソファ'},{src:'items_2.jpg', alt: '机'},{src:'items_3.jpg', alt: 'ソファ'},
+          {src:'items_1.jpg', alt: 'ローソファ'},{src:'items_2.jpg', alt: '机'},{src:'items_3.jpg', alt: 'ソファ'},
+          {src:'items_1.jpg', alt: 'ローソファ'},{src:'items_2.jpg', alt: '机'},{src:'items_3.jpg', alt: 'ソファ'},
+          {src:'items_1.jpg', alt: 'ローソファ'},{src:'items_2.jpg', alt: '机'},{src:'items_3.jpg', alt: 'ソファ'},
+          {src:'items_1.jpg', alt: 'ローソファ'},{src:'items_2.jpg', alt: '机'},{src:'items_3.jpg', alt: 'ソファ'},
+          {src:'items_1.jpg', alt: 'ローソファ'},{src:'items_2.jpg', alt: '机'},{src:'items_3.jpg', alt: 'ソファ'},
+        ]; %>
+
+        <% for (var i = 0; i < 12; i++) { %>
+
+        <li class="p-products__item">
+          <a href="#" class="p-products__link">
+            <img src="<%= path %><%= product[i].src %>" alt="<%= product[i].alt %>" class="p-products__img">
+          </a>
+        </li>
+
+        <% } %>
+      </ul>
+
+      <a href="#" class="p-products__more">
+        <p class="p-products__txt">アイテムをもっと見る</p>
+        <img src="<%= path %>serch_arrow.png" alt="矢印" class="p-products__arrow">
+      </a>
+
+    </div>
+    <!-- /.p-products__inner -->
+  </section>
+
+  <section class="p-search">
+    <div class="p-search__inner c-contnetFrame">
+      <p class="p-search__top">キーワードから探す</p>
+      <select class="p-search__list" name="kinds">
+        <option class="p-search__item" value="kinds">アイテムを探す</option>
+        <option class="p-search__item" value="kinds">レビューを探す</option>
+        <option class="p-search__item" value="kinds">topicsを探す</option>
+      </select>
+      <input class="p-search__input" type="text">
+      <input class="p-search__btn" type="button" value="検索">
+    </div>
+    <!-- /.p-search__inner -->
+  </section>
+
+  <% include src/ejs/parts/_content %>
+
+</main>
+
+
+<% include src/ejs/template/_footer %>

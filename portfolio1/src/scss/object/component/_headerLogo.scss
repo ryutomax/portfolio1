@@ -1,0 +1,16 @@
+.c-headerLogo {
+  margin: 0 auto;
+  @include opaAnime;
+  &__img {
+    width: 180px;
+    margin-right: -64px;
+  }
+}
+
+@include mq(o-sp){
+  .c-headerLogo{
+    &__img {
+      width: 200px;
+    }
+  }
+}

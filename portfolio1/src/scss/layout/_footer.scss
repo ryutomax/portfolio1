@@ -1,0 +1,28 @@
+.l-footer__bottom {
+  margin-bottom: 40px;
+  padding: 32px 20px;
+  border-bottom: 1px solid $colorGrayLight;
+}
+
+.l-footer__copy {
+  display: block;
+  max-width: 500px;
+}
+
+.l-footer__img {
+  margin-bottom: 8px;
+}
+
+.l-footer__link {
+  display: block;
+  max-width: 500px;
+  text-decoration: underline;
+  @include opaAnime;
+}
+
+@include mq(o-sp){
+  .l-footer__copy,
+  .l-footer__link {
+    margin: 0 auto;
+  }
+}

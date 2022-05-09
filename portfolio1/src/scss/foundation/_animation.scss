@@ -1,0 +1,16 @@
+// animation-name: ; //keyframes
+// animation-duration: ; //duration
+// animation-timing-function: ; //easing
+// animation-delay: ; //delay
+// animation-iteration-count: ; // 1,3,infinite
+// animation-direction: ; //normal,reverse,alternate,alternate-reverse
+// animation-fill-mode: ; //none,forwards,backwards,both
+// animation-play-state: ; //running,paused (animationを止める)
+
+@mixin opaAnime () {
+  cursor: pointer;
+  transition: 0.5s;
+  &:hover {
+    opacity: 0.5;
+  }
+}

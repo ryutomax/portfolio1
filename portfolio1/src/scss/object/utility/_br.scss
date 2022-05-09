@@ -1,0 +1,12 @@
+.u-br__u-sp {
+  display: block;
+}
+
+@include mq(o-sp){
+  .u-br__u-sp {
+    display: none;
+  }
+}
+
+@include mq(o-pc) {
+}
