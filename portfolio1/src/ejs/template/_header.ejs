@@ -1,18 +1,36 @@
 <header class="l-header">
-  <div class="l-header__upper">
-    <div class="l-header__inner">
-      <a class="c-headerLogo" href="#"><img src="<%= path %>logo.png" alt="メインロゴ" class="c-headerLogo__img"></a>
+  <div class="l-header__inner">
+    <h1 class="c-mainLogo"><a href="#" class="c-mainLogo__link"><img src="<%= path %>logo.png" alt="会社ロゴ" class="c-mainLogo__img"></a></h1>
 
-      <a class="c-headerLogin" href="#">
-        <img src="<%= path %>arrow.white.png" alt="矢印" class="c-headerLogin__img">
-        <p class="c-headerLogin__txt">ログイン</p>
-      </a>
+    <nav class="c-headerNav">
+      <ul class="c-headerNav__list">
+
+        <% const navText = [
+          {text:"会社ついて"},{text:"私たちについて"},{text:"お客様の声"},{text:"実績"},{text:"お問い合わせ"},
+        ]; %>
+
+        <% for(var i = 0; i < navText.length; i++) {%>
+
+        <li class="c-headerNav__item">
+          <a href="#" class="c-headerNav__link"><%= navText[i].text %></a>
+        </li>
+
+        <% } %>
+      </ul>
+
+      <div class="c-navBtn">
+        <% for(var i = 0; i<3; i++) {%>
+        <span class="c-navBtn__bar"></span>
+        <% } %>
+      </div>
+      <!-- /.c-navBtn -->
+    </nav>
+
+    <div class="l-header__imgs">
+      <img src="<%= path %>instagram.png" alt="instagram" class="l-header__insta">
+      <img src="<%= path %>ribon.png" alt="リボン" class="l-header__ribon">
     </div>
-    <!-- /.l-header__inner -->
+    <!-- /.l-header__imgs -->
   </div>
-  <!-- /.l-header__upper -->
-  <div class="l-header__lower">
-    <h1 class="l-header__ttl">家具情報サイト　タブルーム</h1>
-  </div>
-  <!-- /.l-header__lower -->
+  <!-- /.l-header__inner -->
 </header>
