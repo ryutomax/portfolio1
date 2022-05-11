@@ -1,0 +1,41 @@
+.p-header {
+
+  &__navBtn {
+    display: block;
+  }
+
+  &__imgs {
+    display: none;
+  }
+
+
+}
+
+@include mq (o-sp) {
+}
+
+@include mq (o-tb) {
+}
+
+@include mq (o-pc) {
+  .p-header {
+
+    &__navInsta {
+      display: none;
+    }
+
+    &__imgs {
+      display: block;
+    }
+
+    &__insta {
+      width: 16px;
+      margin-right: 20px;
+    }
+
+    &__navBtn {
+      display: none;
+    }
+
+  }
+}

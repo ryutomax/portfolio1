@@ -1,0 +1,31 @@
+.c-footerNav {
+  margin-bottom: 10px;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 16px;
+  }
+
+  &__item {
+    display: inline-block;
+    padding: 0 10px 20px 10px
+  }
+
+  &__link {
+    font-size: 12px;
+    font-size: 0.75rem;
+  }
+}
+
+@include mq (o-tb) {
+  .c-footerNav {
+    &__list {
+      width: 100%;
+      justify-content: space-between;
+    }
+  }
+}

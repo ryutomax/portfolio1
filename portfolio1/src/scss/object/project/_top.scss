@@ -1,0 +1,101 @@
+.p-top {
+  padding-top: 95px;
+  padding-right: 24px;
+  padding-left: 24px;
+
+  &__inner {
+    max-width: 1100px;
+    position: relative;
+    height: 220px;
+    margin: 0 auto;
+    padding-top: 32px;
+  }
+
+  &__main {
+    text-align: center;
+  }
+
+  &__mainLink {}
+
+  &__symbol {
+    width: 60px;
+  }
+
+  &__nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    &:hover {
+      .p-top__navArrow {
+        top: 8px;
+      }
+    }
+  }
+
+  &__navLink {
+    display: block;
+    padding-bottom: 12px;
+  }
+
+  &__img {}
+
+  &__more {
+    position: relative;
+    width: 10px;
+    bottom: -32px;
+    margin-right: 8px;
+  }
+
+  &__navFrame {
+    width: 10px;
+    height: 30px;
+    left: 0;
+    position: absolute;
+    overflow: hidden;
+  }
+
+  &__navArrow {
+    position: absolute;
+    width: 38px;
+    top: 0;
+    left: -13px;
+    transform: rotateZ(90deg);
+    transition: 0.5s;
+  }
+
+}
+
+@include mq (o-sp) {
+
+}
+
+@include mq (o-tb) {
+  .p-top {
+    &__inner {
+      height: 370px;
+      padding-top: 80px;
+    }
+
+    &__symbol {
+      width: 105px;
+    }
+
+    &__navFrame {
+      left: 4px;
+    }
+
+    &__more {
+      width: 16px;
+      bottom: -60px;
+      margin-right: 20px;
+    }
+  }
+}
+
+@include mq (o-pc) {
+  .p-top {
+    padding-top: 180px;
+    &__inner {
+    }
+  }
+}

@@ -1,0 +1,144 @@
+.p-voice {
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__main {
+
+  }
+
+  &__link {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  &__img {
+    height: 100%;
+  }
+
+  &__meta {
+
+  }
+
+  &__cat {
+    position: relative;
+    margin-bottom: 20px;
+    font-size: 10px;
+    font-size: 0.625rem;
+    text-transform: uppercase;
+    &::before {
+      position: absolute;
+      left: -38px;
+      font-size: 20px;
+      font-size: 1.25rem;
+      font-weight: bold;
+      letter-spacing: 0.05em;
+      content: "01";
+    }
+  }
+
+  &__txt {
+    margin-bottom: 10px;
+    font-weight: bold;
+    line-height: 1.8;
+  }
+
+  &__ttl {
+    margin-bottom: 25px;
+    font-size: 10px;
+    font-size: 0.625rem;
+  }
+}
+
+@include mq (o-sp) {
+}
+
+@include mq (o-tb) {
+  .p-voice {
+    &__main {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row-reverse;
+      padding-top: 50px;
+    }
+
+    &__link {
+      display: block;
+      margin-bottom: 20px;
+    }
+
+    &__img {
+      width: 324px;
+      height: 216px;
+      object-fit: cover;
+    }
+
+    &__meta {
+      flex: 0 0 250px;
+    }
+
+    &__txt {
+      font-size: 20px;
+      font-size: 1.25rem;
+    }
+
+    &__ttl {
+
+    }
+
+    &__cat {
+      position: relative;
+      margin-bottom: 30px;
+      font-size: 12px;
+      font-size: 0.75rem;
+      &::before {
+        top: -2px;
+        left: -55px;
+        font-size: 35px;
+        font-size: calc((35/16)*1rem);
+
+      }
+    }
+  }
+}
+
+@include mq (o-bigTb) {
+  .p-voice {
+    &__meta {
+      flex: 0 0 314px;
+    }
+
+    &__txt {
+      margin-bottom: 15px;
+    }
+
+    &__ttl {
+      margin-bottom: 35px;
+      font-size: 14px;
+      font-size: 0.875rem;
+      text-transform: capitalize;
+    }
+  }
+}
+
+@include mq (o-pc) {
+  .p-voice {
+    &__img {
+      width: 480px;
+      height: 320px;
+      object-fit: cover;
+    }
+
+    &__meta {
+      flex: 0 0 436px;
+      padding-left: 60px;
+    }
+
+    &__txt {
+      font-size: 24px;
+      font-size: 1.5rem;
+    }
+  }
+}

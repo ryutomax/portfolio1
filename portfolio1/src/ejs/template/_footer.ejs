@@ -2,7 +2,7 @@
 <% const path = ["../../assets/images/"]%>
 
 <footer class="l-footer">
-  <div class="l-footer">
+  <div class="l-footer__inner">
     <nav class="c-footerNav">
       <ul class="c-footerNav__list">
         <% const navText = [
@@ -17,12 +17,13 @@
       </ul>
     </nav>
 
-    <h1 class="c-footerLogo"><img src="<% path %>mian-logo.png" alt="メイン会社ロゴ" class="c-footerLogo__img"></h1>
+    <h1 class="c-footerLogo"><img src="<%= path %>mian-logo.png" alt="メイン会社ロゴ" class="c-footerLogo__img"></h1>
     <address class="l-footer__address">東京都渋谷区神南1-20-2 第一清水ビル4F</address>
 
-    <small>&copy;portfolio.inc all rights reserved</small>
+
   </div>
-  <!-- /.l-footer -->
+  <!-- /.l-footer__inner -->
+  <small class="l-footer__copy">&copy;portfolio.Inc all rights reserved</small>
 
 </footer>
 </div><!-- l-wrap -->

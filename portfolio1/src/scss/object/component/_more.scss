@@ -1,0 +1,48 @@
+.c-more {
+  display: flex;
+  position: relative;
+  text-transform: uppercase;
+
+  &__txt {
+    margin-right: 16px;
+    font-size: 14px;
+    font-size: 0.875rem;
+    span {
+      display: none;
+    }
+  }
+
+  &__frame {
+    width: 32px;
+    height: 16px;
+    position: relative;
+    top: 0;
+    overflow: hidden;
+  }
+
+  &__arrow {
+    width: 38px;
+    position: absolute;
+    top: 3px;
+    left: -17px;
+    transition: 0.5s;
+  }
+
+  &:hover {
+    .c-more__arrow {
+      left: -10px;
+    }
+  }
+}
+
+@include mq (o-tb) {
+  .c-more {
+
+    &__txt {
+      span {
+        display: inline-block;
+        margin-right: 8px;
+      }
+    }
+  }
+}

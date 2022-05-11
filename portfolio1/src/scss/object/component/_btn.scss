@@ -1,3 +1,42 @@
-.btn {
-	color: #fff;
+.c-navBtn {
+  display: block;
+  position: relative;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  &__bar {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: $colorBlack;
+    &:nth-child(2) {
+      top: calc(50% - 1.5px);
+    }
+
+    &:last-child {
+      bottom: 0;
+    }
+  }
+}
+
+.c-contactBtn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  max-width: 800px;
+  height: 70px;
+  margin: 0 auto;
+  border: 1px solid $colorBlack;
+  text-align: center;
+  transition: 0.5s;
+}
+
+@include mq (o-tb) {
+
+  .c-contactBtn {
+    
+
+  }
 }

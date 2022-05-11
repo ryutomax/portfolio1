@@ -1,0 +1,68 @@
+.p-contact {
+  background-color: $colorBeige;
+
+  &__ttl {
+    margin-bottom: 24px;
+  }
+  &__img {
+    margin-top: -50px;
+  }
+
+  &__btn {
+    flex-direction: row;
+    margin-bottom: 10px;
+    background-color: $colorBlack;
+    color: $colorWhite;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 70px;
+    &:hover {
+      background-color: $colorWhite;
+      color: $colorBlack;
+    }
+  }
+  
+  &__span {
+    display: inline-block;
+  }
+
+  &__and {
+    margin: 0 4px;
+  }
+
+  &__tel {
+    background-color: $colorWhite;
+    font-size: 15px;
+    font-size: 0.9375rem;
+    line-height: 28px;
+    span {
+      font-size: 22px;
+      font-size: 1.375rem;
+      font-weight: bold;
+      letter-spacing: 0.03em;
+    }
+    &:hover {
+      background-color: $colorBlack;
+      color: $colorWhite;
+    }
+  }
+}
+
+@include mq (o-tb) {
+  .p-contact {
+    &__img {
+      margin-top: -80px;
+    }
+
+    &__btn {
+      margin-bottom: 20px;
+    }
+
+    &__tel {
+      background-color: rgba(0, 0, 0, 0);
+      border: none;
+    }
+  }
+
+
+}

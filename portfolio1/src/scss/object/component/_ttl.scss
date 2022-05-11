@@ -1,0 +1,16 @@
+.c-ttl {
+  &__img {
+    width: 32px;
+  }
+}
+
+@include mq (o-sp) {
+}
+
+@include mq (o-tb) {
+  .c-ttl {
+    &__img {
+      width: 53px;
+    }
+  }
+}
