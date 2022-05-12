@@ -14,12 +14,6 @@
   }
 }
 
-@include mq (o-sp) {
-}
-
-@include mq (o-tb) {
-}
-
 @include mq (o-pc) {
   .l-header {
     position: fixed;
@@ -30,6 +24,5 @@
       height: 100px;
       padding: 0 16px;
     }
-
   }
 }

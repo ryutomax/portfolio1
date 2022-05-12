@@ -17,17 +17,16 @@
   }
 
   &__item {
-    font-size: 12px;
-    font-size: 0.875rem;
+    font-size: 20px;
+    font-size: 1.25rem;
     &:not(:last-child) {
-      margin-bottom: 28px;
+      margin-bottom: 48px;
     }
   }
 
   &__link {
     @include opaAnime;
   }
-
 }
 
 @include mq (o-sp) {
@@ -37,9 +36,6 @@
       padding-top: 60px;
     }
   }
-}
-
-@include mq (o-tb) {
 }
 
 @include mq (o-pc) {
@@ -62,6 +58,8 @@
     }
 
     &__item {
+      font-size: 12px;
+      font-size: 0.875rem;
       &:not(:last-child) {
         margin-bottom: 0;
       }

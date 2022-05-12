@@ -54,7 +54,6 @@
     transform: rotateZ(90deg);
     @include arrowAnime;
   }
-
 }
 
 @include mq (o-tb) {
