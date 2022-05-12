@@ -1,9 +1,18 @@
 .p-contact {
+  position: relative;
   background-color: $colorBeige;
+
+
+  &__toTop {
+    right: -40px;
+    top: 80px;
+    @include opaAnime;
+  }
 
   &__ttl {
     margin-bottom: 24px;
   }
+
   &__img {
     margin-top: -50px;
   }
@@ -21,7 +30,7 @@
       color: $colorBlack;
     }
   }
-  
+
   &__span {
     display: inline-block;
   }
@@ -61,6 +70,10 @@
     &__tel {
       background-color: rgba(0, 0, 0, 0);
       border: none;
+      &:hover {
+        background-color: $colorBeige;
+        color: $colorBlack;
+      }
     }
   }
 

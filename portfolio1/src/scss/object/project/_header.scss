@@ -1,5 +1,6 @@
 .p-header {
 
+
   &__navBtn {
     display: block;
   }
@@ -8,13 +9,10 @@
     display: none;
   }
 
-
-}
-
-@include mq (o-sp) {
-}
-
-@include mq (o-tb) {
+  &__navInsta {
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 @include mq (o-pc) {

@@ -1,0 +1,43 @@
+.c-toTop {
+  display: none;
+  position: absolute;
+  transform: rotateZ(90deg);
+  cursor: pointer;
+
+  &__txt {
+    font-size: 14px;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
+  &__frame {
+    position: relative;
+    width: 48px;
+    height: 16px;
+    margin-right: 10px;
+    overflow: hidden;
+  }
+
+  &__arrow {
+    position: absolute;
+    top: 5px;
+    left: 28px;
+    width: 36px;
+    transform: rotateY(180deg);
+    transition: 0.5s;
+  }
+
+  &:hover {
+    .c-toTop__arrow {
+      left: 12px;
+    }
+  }
+}
+
+@include mq (o-pc) {
+  .c-toTop {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}

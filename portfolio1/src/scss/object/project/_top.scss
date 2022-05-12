@@ -15,8 +15,6 @@
     text-align: center;
   }
 
-  &__mainLink {}
-
   &__symbol {
     width: 60px;
   }
@@ -25,19 +23,13 @@
     position: absolute;
     top: 0;
     right: 0;
-    &:hover {
-      .p-top__navArrow {
-        top: 8px;
-      }
-    }
+    @include opaAnime;
   }
 
   &__navLink {
     display: block;
     padding-bottom: 12px;
   }
-
-  &__img {}
 
   &__more {
     position: relative;
@@ -60,7 +52,7 @@
     top: 0;
     left: -13px;
     transform: rotateZ(90deg);
-    transition: 0.5s;
+    @include arrowAnime;
   }
 
 }
@@ -95,7 +87,5 @@
 @include mq (o-pc) {
   .p-top {
     padding-top: 180px;
-    &__inner {
-    }
   }
 }

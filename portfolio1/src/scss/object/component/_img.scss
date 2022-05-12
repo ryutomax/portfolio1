@@ -2,6 +2,7 @@
 
   &__insta {
     width: 26px;
+    @include opaAnime;
   }
 
   &__ribon {

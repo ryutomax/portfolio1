@@ -1,31 +1,42 @@
 .c-headerNav {
 
   &__wrapper {
-    display: none;
-    position: fixed;
     width: 100vw;
-    height: 100vh;
+    height: 0;
+    position: fixed;
+    left: 0;
+    padding-top: 80px;
     background-color: $colorWhite;
+    overflow: hidden;
+    transition: 0.5s;
   }
 
   &__list {
-
+    text-align: center;
+    margin-bottom: 40px;
   }
 
   &__item {
-    font-size: 14px;
+    font-size: 12px;
     font-size: 0.875rem;
     &:not(:last-child) {
-      margin-bottom: 15px;
+      margin-bottom: 28px;
     }
   }
 
   &__link {
+    @include opaAnime;
   }
 
 }
 
 @include mq (o-sp) {
+  .c-headerNav {
+
+    &__wrapper {
+      padding-top: 60px;
+    }
+  }
 }
 
 @include mq (o-tb) {
@@ -39,6 +50,7 @@
       position: static;
       width: auto;
       height: auto;
+      padding-top: 0px;
     }
 
     &__list {
@@ -46,7 +58,7 @@
       align-items: center;
       justify-content: space-between;
       width: 460px;
-
+      margin-bottom: 0;
     }
 
     &__item {

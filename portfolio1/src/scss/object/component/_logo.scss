@@ -2,6 +2,7 @@
   &__link {
     display: block;
     width: 150px;
+    @include opaAnime;
   }
 }
 
@@ -9,7 +10,6 @@
   width: 280px;
   margin: 0 auto;
   margin-bottom: 8px;
-  &__img {}
 }
 
 @include mq (o-sp) {

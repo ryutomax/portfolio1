@@ -5,10 +5,6 @@
     justify-content: space-between;
   }
 
-  &__main {
-
-  }
-
   &__link {
     display: block;
     margin-bottom: 20px;
@@ -16,10 +12,7 @@
 
   &__img {
     height: 100%;
-  }
-
-  &__meta {
-
+    @include opaAnime;
   }
 
   &__cat {
@@ -52,9 +45,6 @@
   }
 }
 
-@include mq (o-sp) {
-}
-
 @include mq (o-tb) {
   .p-voice {
     &__main {
@@ -82,10 +72,6 @@
     &__txt {
       font-size: 20px;
       font-size: 1.25rem;
-    }
-
-    &__ttl {
-
     }
 
     &__cat {

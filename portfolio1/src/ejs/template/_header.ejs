@@ -1,9 +1,9 @@
 <header class="l-header u-z-index10">
   <div class="l-header__inner">
-    <h1 class="c-logo"><a href="#" class="c-logo__link"><img src="<%= path %>logo.png" alt="会社ロゴ" class="c-logo__img"></a></h1>
+    <h1 class="c-logo u-z-index10"><a href="#" class="c-logo__link"><img src="<%= path %>logo.png" alt="会社ロゴ" class="c-logo__img"></a></h1>
 
     <nav class="c-headerNav">
-      <div class="p-header__nav c-headerNav__wrapper">
+      <div class="p-header__nav c-headerNav__wrapper js-nav__open">
         <ul class="c-headerNav__list">
 
           <% const navText = [
@@ -19,7 +19,9 @@
           <% } %>
 
         </ul>
-        <img src="<%= path %>instagram.png" alt="instagram" class="p-header__navInsta c-img__insta">
+          <a href="#" class="c-img__instaLink" target="_blank">
+            <img src="<%= path %>instagram.png" alt="instagram" class="p-header__navInsta c-img__insta">
+          </a>
       </div>
       <!-- /.c-headerNav__wrapper -->
 
@@ -32,7 +34,7 @@
     </nav>
 
     <div class="p-header__imgs">
-      <img src="<%= path %>instagram.png" alt="instagram" class="p-header__insta c-img__insta">
+      <a href="#" class="p-header__instaLink" target="_blank"><img src="<%= path %>instagram.png" alt="instagram" class="p-header__insta c-img__insta"></a>
       <img src="<%= path %>ribon.png" alt="リボン" class="c-img__ribon">
     </div>
     <!-- /.l-header__imgs -->

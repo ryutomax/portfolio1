@@ -1,4 +1,4 @@
-<% var title = "TOP"; var description = "トップのdescription"; %>
+<% var title = "Portfolio"; var description = "このサイトはポートフォリオサイトです。"; %>
 
 <!-- 画像相対パス -->
 <% const path = ["../../assets/images/"]%>
@@ -7,7 +7,7 @@
 
 <% include src/ejs/template/_header %>
 
-<section class="p-top">
+<section class="p-top" id="top">
   <div class="p-top__inner">
 
     <h1 class="p-top__main">
@@ -17,7 +17,7 @@
     </h1>
 
     <div class="p-top__nav">
-      <a href="#" class="p-top__navLink">
+      <a href="#gallery" class="p-top__navLink">
 
         <img src="<%= path %>title02.png" alt="もっと見る" class="p-top__more">
 
@@ -35,7 +35,7 @@
 
 </section>
 
-<section class="p-gallery">
+<section class="p-gallery" id="gallery">
   <div class="p-gallery__inner">
     <div class="p-gallery__top">
       <a href="#" class="p-gallery__link">
@@ -188,6 +188,14 @@
 </section>
 
 <section class="p-contact">
+
+  <a href="#top" class="p-contact__toTop c-toTop">
+    <p  class="c-toTop__txt">back to top</p>
+    <div class="c-toTop__frame">
+      <img src="<%= path %>arrow.svg" alt="矢印" class="c-toTop__arrow">
+    </div>
+  </a>
+
   <div class="p-contact__inner  c-section__inner">
     <h2 class="p-contact__ttl c-ttl">
       <img src="<%= path %>title06.png" alt="お問い合わせ" class="p-contact__img c-ttl__img">
