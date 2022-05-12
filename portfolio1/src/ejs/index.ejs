@@ -9,30 +9,23 @@
 
 <section class="p-top" id="top">
   <div class="p-top__inner">
-
     <h1 class="p-top__main">
       <a href="#" class="p-top__mainLink">
         <img src="<%= path %>main-symbol.png" alt="メインシンボル" class="p-top__symbol">
       </a>
     </h1>
-
     <div class="p-top__nav">
       <a href="#gallery" class="p-top__navLink">
-
         <img src="<%= path %>title02.png" alt="もっと見る" class="p-top__more">
-
         <div class="p-top__navFrame">
           <img src="<%= path %>arrow.svg" alt="矢印" class="p-top__navArrow">
         </div>
         <img src="<%= path %>title08.png" alt="ポートフォリオサイト"  class="p-top__img c-ttl__img">
-
       </a>
     </div>
     <!-- /.p-top__side -->
-
   </div>
   <!-- /.p-top__inner -->
-
 </section>
 
 <section class="p-gallery" id="gallery">
@@ -49,18 +42,14 @@
       </a>
     </div>
     <!-- /.p-gallery__top -->
-
     <ul class="p-gallery__list">
-
       <% const gallery = [
         {src: "bicycle_2.jpg", ttl: "portfolio", place:"ohmiya"},
         {src: "bicycle_3.jpg", ttl: "ポートフォリオサイト", place:"shibuya"},
         {src: "bicycle_4.jpg", ttl: "cycle", place:"ikebukuro"},
         {src: "bicycle_5.jpg", ttl: "ロードバイク", place:"shinjuku"},
       ]; %>
-
       <% for(var i = 0; i<gallery.length; i++) { %>
-
       <li class="p-gallery__item">
         <a href="#" class="p-gallery__link">
           <div class="p-gallery__mask"></div>
@@ -68,13 +57,11 @@
           <div class="p-gallery__txt">
             <h2 class="p-gallery__ttl"><%= gallery[i].ttl %></h2>
             <h3 class="p-gallery__meta">2022 / <%= gallery[i].place %> </h3>
-          <span class="p-gallery__cat">new</span>
-        </div>
+            <span class="p-gallery__cat">new</span>
+          </div>
         </a>
       </li>
-
       <% } %>
-
     </ul>
     <!-- /.p-gallery__imgs -->
   </div>
@@ -86,18 +73,13 @@
     <h2 class="c-ttl">
       <img src="<%= path %>title03.png" alt="お客様の声" class="c-ttl__img">
     </h2>
-
     <div class="p-voice__main c-section__main">
-
       <a href="#" class="p-voice__link">
         <img src="<%= path %>bicycle_6.jpg" alt="サムネイル" class="p-voice__img">
       </a>
-
       <div class="p-voice__meta">
         <h3 class="p-voice__cat">new</h3>
-        <h4 class="p-voice__txt">ポートフォリオサイトと<br>ポートレートサイトは、<br>響きは似ているが意味が異なる</h４>
-        <h2 class="p-voice__ttl">portfolio</h2>
-
+        <h4 class="p-voice__txt">ポートフォリオサイトと<br>ポートレートサイトは、<br>響きは似ているが意味が異なる</h4>
         <a href="#" class="c-more">
           <p class="c-more__txt"><span>read</span>more</p>
           <div class="c-more__frame">
@@ -106,10 +88,8 @@
         </a>
       </div>
       <!-- /.p-voice__meta -->
-
     </div>
     <!-- /.p-voice__main -->
-
   </div>
   <!-- /.p-voice__inner -->
 </section>
@@ -119,18 +99,14 @@
     <h2 class="c-ttl">
       <img src="<%= path %>title05.png" alt="お知らせ" class="c-ttl__img">
     </h2>
-
     <div class="p-news__main c-section__main">
       <ul class="p-news__list">
-
         <% const news = [
           {date: "2022/05/06", cat:"お知らせ", ttl:"新しい記事です。"},
           {date: "2022/05/05", cat:"News", ttl:"新しいNewsです。"},
           {date: "2022/05/04", cat:"ブログ", ttl:"新しいロードバイクです。"},
         ]; %>
-
         <% for(var i = 0; i < news.length; i++ ) {%>
-
         <li class="p-news__item">
             <div class="p-news__meta">
               <time class="p-news__date" datetime="<%= news[i].date %>"><%= news[i].date %></time>
@@ -140,9 +116,7 @@
             <h2 class="p-news__itemTtl"><a href="#" class="p-news__link"><%= news[i].ttl %></a></h2>
         </li>
         <% } %>
-
       </ul>
-
       <a href="#" class="p-news__more c-more">
         <p class="c-more__txt">more</p>
         <div class="c-more__frame">
@@ -151,66 +125,49 @@
       </a>
     </div>
     <!-- /.p-news__main -->
-
   </div>
   <!-- /.p-news__inner -->
 </section>
 
 <section class="p-access c-section">
   <div class="p-access__inner c-section__inner">
-
     <div class="p-access__head">
       <h2 class="c-ttl">
         <img src="<%= path %>title09.png" alt="アクセス" class="c-ttl__img">
       </h2>
-
       <div class="p-access__meta c-section__main">
         <h3 class="p-access__metaTtl">本社</h3>
         <address class="p-access__address">東京都渋谷区神南1-20-2 第一清水ビル4F</address>
         <p class="p-access__tel">TEL 000-0000-0000(代表)</p>
         <p class="p-access__tel">FAX 000-0000-0000</p>
-        <p class="p-access__hours">
-          10:00~19:00 <br class="u-br__o-tb">土日・祝日定休
-        </p>
+        <p class="p-access__hours">10:00~19:00 <br class="u-br__o-tb">土日・祝日定休</p>
       </div>
       <!-- /.p-access__meta -->
-
     </div>
     <!-- /.p-access__head -->
-
     <div class="p-access__frame">
       <iframe class="p-access__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.612738285934!2d139.69792791525828!3d35.6619117801988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ca88ae1bdff%3A0x6a162b1b76d106f!2z44CSMTUwLTAwNDEg5p2x5Lqs6YO95riL6LC35Yy656We5Y2X77yR5LiB55uu77yS77yQ4oiS77ySIOa4heawtOODk-ODqyA0Zg!5e0!3m2!1sja!2sjp!4v1652147882647!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
     <!-- /.p-access__map -->
-
   </div>
   <!-- /.p-access__inner -->
 </section>
 
 <section class="p-contact">
-
   <a href="#top" class="p-contact__toTop c-toTop">
     <p  class="c-toTop__txt">back to top</p>
     <div class="c-toTop__frame">
       <img src="<%= path %>arrow.svg" alt="矢印" class="c-toTop__arrow">
     </div>
   </a>
-
   <div class="p-contact__inner  c-section__inner">
     <h2 class="p-contact__ttl c-ttl">
       <img src="<%= path %>title06.png" alt="お問い合わせ" class="p-contact__img c-ttl__img">
     </h2>
-
     <a href="#" class="p-contact__btn c-contactBtn">お問い合わせ<span class="p-contact__span u-dn__o-pc">はこちら</span><span class="p-contact__span u-db__o-pc"><span class="p-contact__and">&</span>資料請求</span></a>
-    <a href="tel:000-0000-0000" class="p-contact__tel c-contactBtn">
-      お電話でのお問い合わせ<br><span>000-0000-0000</span>
-    </a>
-    </div>
-    <!-- /.p-contact__main -->
-
+    <a href="tel:000-0000-0000" class="p-contact__tel c-contactBtn">お電話でのお問い合わせ<br><span>000-0000-0000</span></a>
   </div>
   <!-- /.p-contact__inner -->
 </section>
-
 
 <% include src/ejs/template/_footer %>

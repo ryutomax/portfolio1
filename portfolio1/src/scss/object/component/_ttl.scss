@@ -4,9 +4,6 @@
   }
 }
 
-@include mq (o-sp) {
-}
-
 @include mq (o-tb) {
   .c-ttl {
     &__img {

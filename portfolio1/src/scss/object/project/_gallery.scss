@@ -30,10 +30,6 @@
 
   }
 
-  &__img {
-
-  }
-
   &__txt {
     position: absolute;
     top: 55%;
@@ -82,17 +78,6 @@
       }
     }
   }
-
-  &__link {}
-
-  &__mask {}
-
-  &__imgS {}
-
-}
-
-@include mq (o-sp) {
-
 }
 
 @include mq (o-tb) {

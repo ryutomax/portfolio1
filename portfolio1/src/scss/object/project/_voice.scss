@@ -33,15 +33,9 @@
   }
 
   &__txt {
-    margin-bottom: 10px;
+    margin-bottom: 32px;
     font-weight: bold;
     line-height: 1.8;
-  }
-
-  &__ttl {
-    margin-bottom: 25px;
-    font-size: 10px;
-    font-size: 0.625rem;
   }
 }
 
@@ -97,14 +91,7 @@
     }
 
     &__txt {
-      margin-bottom: 15px;
-    }
-
-    &__ttl {
-      margin-bottom: 35px;
-      font-size: 14px;
-      font-size: 0.875rem;
-      text-transform: capitalize;
+      margin-bottom: 40px;
     }
   }
 }

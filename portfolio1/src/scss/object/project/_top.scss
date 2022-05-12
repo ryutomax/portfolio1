@@ -57,10 +57,6 @@
 
 }
 
-@include mq (o-sp) {
-
-}
-
 @include mq (o-tb) {
   .p-top {
     &__inner {
